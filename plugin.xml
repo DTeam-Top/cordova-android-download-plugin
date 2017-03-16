@@ -18,5 +18,6 @@
 			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 		</config-file>
 		<source-file src="src/android/DownloadPlugin.java" target-dir="src/org/jiuren/cordova/download" />
+		<source-file src="libs/android/android-support-v4.jar" target-dir="libs" />
 	</platform>
 </plugin>
