@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="cordova-plugin-android-download" version="0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>download</name>
+	<js-module name="Downloader" src="www/download.js">
+		<clobbers target="Downloader" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="DownloadPlugin">
+				<param name="android-package" value="org.jiuren.cordova.download.DownloadPlugin" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+			<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+			<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		</config-file>
+		<source-file src="src/android/DownloadPlugin.java" target-dir="src/org/jiuren/cordova/download" />
+	</platform>
+</plugin>
