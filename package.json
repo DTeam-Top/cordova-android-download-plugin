@@ -1,0 +1,15 @@
+{
+  "name": "cordova-android-download-plugin",
+  "version": "1.0.0",
+  "description": "cordova android 下载插件",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DTeam-Top/cordova-android-download-plugin.git"
+  },
+  "author": "吕健",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DTeam-Top/cordova-android-download-plugin/issues"
+  },
+  "homepage": "https://github.com/DTeam-Top/cordova-android-download-plugin#readme"
+}
